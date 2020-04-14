@@ -51,8 +51,112 @@ export const Owner = styled.header`
 `;
 
 export const BackButton = styled(Link)
-`
+    `
  border:0;
  outline:0;
  background:transparent;
+`;
+
+
+export const IssuesList = styled.ul
+    `
+    margin-top:30px;
+    padding-top:30px;
+    border-top:1px solid #ddd;
+    list-style:none;
+
+
+    & + li{
+        margin-top: 12px;
+
+    }
+
+
+    li{
+        display:flex;
+        padding: 15px 10px;
+        
+        img{
+            width:36px;
+            height:36px;
+            border-radius:50%;
+            border:2px solid #00134d;
+        }
+
+        div{
+            flex:1;
+            margin-left:12px;
+
+            p{
+                margin-top: 10px;
+                font-size: 12px;
+                color: #000;
+            }
+        }
+    
+
+        strong{
+            font-size: 15px;
+
+            a{
+                text-decoration:none;
+                color: #222;
+                transform: 0.3s;
+
+                &:hover{
+                    color: #00134d;
+                }
+             
+                
+            }
+
+            span{
+                background: #222;
+                color: #FFF;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weigth: 600px;
+                padding: 6px 7px;
+                margin-left: 10px;
+            }
+
+        }
+
+
+    }
+
+
+
+
+`;
+
+
+
+
+export const PageActions = styled.div
+`
+display:flex;
+align-items:center;
+justify-content: space-between;
+
+
+
+    button{
+        outline:0;
+        border:0;
+        background:#222;
+        color:#FFF;
+        padding:5px 10px;
+        border-radius: 4px;
+
+
+        &:disabled{
+            cursor:not-allowed;
+            opacity:0.5;
+        }
+
+    }
+
+
+
 `;
